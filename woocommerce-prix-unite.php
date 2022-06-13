@@ -30,7 +30,7 @@ function add_custom_price_box($post_id)
 			'placeholder' => "mettre le conditionnement (ex: 500gr)",
 			'value' => get_post_meta(get_the_ID(), '_unit_label', true),
 			'label' => __('label de conditionnement', 'woocommerce'),
-
+                         'custom_attibutes' => array('step' =>'any','min' => '0'),
 			'description' => __('sera affiché à la suite du titre', 'woocommerce')
 		)
 	);
